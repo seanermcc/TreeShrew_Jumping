@@ -1,22 +1,22 @@
 """
-v4 jump set = v3 with two manual corrections from the user's frame-by-frame review:
+v4 jump set = v3 with manual corrections from the user's frame-by-frame review:
 
   * DROP  v3_05 and v3_07  -- not jumps ("crawls across" the platform)
+  * DROP  v3_12  -- a fall, not a real jump ("crawls + falls a bit"). Was briefly
+           kept (re-timed to f68255) in the first v4 pass; the user's second
+           review (2026-09-08) reclassified it as a fall and pulled it out of
+           every downstream analysis and out of v4/clips.
   * RETIME v3_06  -> onset f48158 (t = -0.32 s vs the v3 onset): the up->down drop
            off the platform. The v3 peak-speed detector rejected the true peak
            (keypoints drop out in the motion blur of the drop) and settled on a
            smaller local max 0.32 s later.
-  * RETIME v3_12  -> onset f68255 (+1.00 s vs the v3 onset, = 2.0 s into the
-           4x-slow v3 review clip): the real head-movement burst. The v3 onset
-           sat on an earlier crawl plus a tracking-dropout spike (2 of 4 head
-           keypoints vanish at f68153 -> centroid jumps 121 px -> bogus 5135 px/s).
 
-Jump IDs are UNCHANGED (still v3_01..v3_17, with 05 and 07 absent) so every
+Jump IDs are UNCHANGED (still v3_01..v3_17, with 05 / 07 / 12 absent) so every
 existing v3 figure / CSV still lines up.
 
-Keypoints: the 13 untouched jumps reuse v3's onset-centred re-analysis
-(_keypoints_v3.csv). v3_06 / v3_12 are re-sliced from the master keypoint table
-(the original overlapping DLC windows, _keypoints_master.csv) because their
+Keypoints: the 12 untouched jumps reuse v3's onset-centred re-analysis
+(_keypoints_v3.csv). v3_06 is re-sliced from the master keypoint table
+(the original overlapping DLC windows, _keypoints_master.csv) because its
 analysis window shifted outside the v3 re-cut clip. Coverage is comparable
 (master vs v3 re-cut agree to ~0.12 px median, per v3/README.md).
 
@@ -31,10 +31,9 @@ import v3_lib as L
 V4 = os.path.join(L.AN, "v4")
 os.makedirs(V4, exist_ok=True)
 
-DROP = ["v3_05", "v3_07"]
+DROP = ["v3_05", "v3_07", "v3_12"]
 ONSET_OVERRIDE = {
     "v3_06": (48158, "manual: movement onset, t-0.32s vs v3 (platform drop)"),
-    "v3_12": (68255, "manual: aligned to 2.0s into the 4x-slow v3 clip"),
 }
 PRE_S, POST_S = 1.0, 3.0
 RAW_COLS = ([f"{bp}_x_raw" for bp in L.BODYPARTS]

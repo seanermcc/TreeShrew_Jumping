@@ -8,7 +8,6 @@ v3_08,v2_12,10,up->up,y,y,59192,591.92,v3 peak head speed (unchanged),2419,59192
 v3_09,v2_13,11,up->up,n,y,60746,607.46,v3 peak head speed (unchanged),1528,60746,0.0,607.15,610.34,606.46,610.46,stutters,100,88
 v3_10,v2_14,12,up->up,y,y,61378,613.78,v3 peak head speed (unchanged),2279,61378,0.0,613.61,615.47,612.78,616.78,,99,90
 v3_11,v2_15,13,up->up,n,y,64239,642.39,v3 peak head speed (unchanged),2562,64239,0.0,641.95,646.15,641.39,645.39,crawls across,59,46
-v3_12,v2_19,19,up->up,n,y,68255,682.55,manual: aligned to 2.0s into the 4x-slow v3 clip,1018,68155,1.0,681.2,682.61,681.55,685.55,crawls+falls a bit,79,100
 v3_13,v2_20+v2_21,20+21,up->down,y,y,68882,688.82,v3 peak head speed (unchanged),3533,68882,0.0,683.8,689.58,687.82,691.82,jump cut at end | v20 overlap,78,64
 v3_14,v2_22,22,down->up,n,y,82745,827.45,v3 peak head speed (unchanged),1672,82745,0.0,824.53,828.76,826.45,830.45,"hop up, ",100,73
 v3_15,v2_24,23,up->up,y,y,83110,831.1,v3 peak head speed (unchanged),4209,83110,0.0,831.0,831.62,830.1,834.1,slips at start,94,100

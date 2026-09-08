@@ -18,12 +18,28 @@ Outputs (all under analysis/v4/figures/onset_triplets/):
 """
 import os
 import sys
+import time
 import subprocess
 import numpy as np
 import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+
+_osf = plt.Figure.savefig
+
+
+def _savefig_retry(self, f, *a, **k):          # E:\ figures take transient locks
+    for i in range(8):
+        try:
+            return _osf(self, f, *a, **k)
+        except OSError:
+            if i == 7:
+                raise
+            time.sleep(0.7)
+
+
+plt.Figure.savefig = _savefig_retry
 
 sys.path.insert(0, r"E:\TreeShrew_Jumping\analysis")
 import v3_lib as L

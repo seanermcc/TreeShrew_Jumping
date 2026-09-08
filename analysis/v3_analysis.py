@@ -129,18 +129,25 @@ def crosses_gap(d_raw):
     return bool(inside.sum() >= 3)
 
 
+# override to point at a re-labelled file (e.g. v4/paw_contacts_v4.csv)
+PAW_CONTACTS_PATH = os.path.join(L.V3, "paw_contacts.csv")
+
+
 def load_paw_contacts():
     """Manually annotated forepaw first-contact point per jump (Cam2, image px).
 
     The DLC model tracks only the head, so the touchdown point was read off
     frame-by-frame from the video (see paw_contacts.csv, ~+-20 px, +-3 frames;
     a `confidence` column flags the shakier ones -- slow crawls have no discrete
-    contact). Returns {jump: (x_img, y_up, confidence)}.
+    contact). Rows flagged `status == "no_contact"` are skipped. Returns
+    {jump: (x_img, y_up, confidence)}.
     """
-    p = os.path.join(L.V3, "paw_contacts.csv")
+    p = PAW_CONTACTS_PATH
     if not os.path.exists(p):
         return {}
     df = pd.read_csv(p)
+    if "status" in df.columns:
+        df = df[~df["status"].fillna("ok").isin(["no_contact", "dropped", "none"])]
     return {r.jump: (float(r.paw_x_img), L.IMG - 1 - float(r.paw_y_img), r.confidence)
             for r in df.itertuples()}
 

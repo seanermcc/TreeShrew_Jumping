@@ -22,14 +22,36 @@ Only these four figures were asked for. The same pattern extends to the rest of
 the v3 figure set (fig01-09c in v3_analysis, fig10-14 in v3_extra) if wanted.
 """
 import os
+import time
 import numpy as np
 import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+
+_osf = plt.Figure.savefig
+
+
+def _savefig_retry(self, f, *a, **k):          # E:\ figures take transient locks
+    for i in range(8):
+        try:
+            return _osf(self, f, *a, **k)
+        except OSError:
+            if i == 7:
+                raise
+            time.sleep(0.7)
+
+
+plt.Figure.savefig = _savefig_retry
 
 import v3_lib as L
 import v3_analysis as A
 import v3_stability as S
+
+# use the re-labelled forepaw touchdown points if v4_paw_gui.py has written them
+_pc_v4 = os.path.join(L.AN, "v4", "paw_contacts_v4.csv")
+if os.path.exists(_pc_v4):
+    A.PAW_CONTACTS_PATH = _pc_v4
 
 V4 = os.path.join(L.AN, "v4")
 FIG4 = os.path.join(V4, "figures")

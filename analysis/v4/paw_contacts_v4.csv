@@ -1,0 +1,16 @@
+jump,contact_frame,paw_x_img,paw_y_img,surface,confidence,note,onset_frame,dframe,status,edited
+v3_01,35305,752.3,360.9,platform,med,,35298,7,ok,True
+v3_02,39018,410.7,671.8,floor,med,"forepaws hit breadboard floor, leftward down-jump",39017,1,ok,True
+v3_03,45279,643.9,356.8,platform,high,reach-plant onto right platform; bright clamp obscures the paw,45265,14,ok,True
+v3_04,45724,333.0,355.5,platform,low,"ballistic-ish; leading forepaw lands well onto left platform, head still trailing ~105 px",45717,7,ok,True
+v3_06,48165,577.2,646.1,floor,high,"controlled climb-down; already walking on floor by window start - x,y approximate",48158,7,ok,True
+v3_08,59193,293.6,346.5,platform,high,forepaw plant onto left platform,59192,1,ok,True
+v3_09,60749,655.3,359.9,platform,low,"reach-plant onto right platform, forepaw ahead of head",60746,3,ok,True
+v3_10,61379,326.8,350.0,platform,high,forepaw plant onto left platform,61378,1,ok,True
+v3_11,64242,633.7,353.8,platform,high,short reach; head barely clears the near part,64239,3,ok,True
+v3_12,68250,251.0,348.7,platform,low,"DROPPED from v4 - fall, not a real jump",68255,-5,dropped,True
+v3_13,68883,645.2,670.0,floor,med,"forepaws hit breadboard floor, rightward down-jump (merged clip)",68882,1,ok,True
+v3_14,82742,765.4,356.8,platform,low,,82745,-3,ok,True
+v3_15,83115,287.6,352.8,platform,med,fastest jump; ballistic landing onto left platform,83110,5,ok,True
+v3_16,85691,667.9,352.9,platform,med,reach-plant onto right platform (merged clip),85683,8,ok,True
+v3_17,93545,470.7,651.8,floor,med,"forepaws hit breadboard floor, leftward down-jump",93546,-1,ok,True
