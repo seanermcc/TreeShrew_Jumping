@@ -1,0 +1,189 @@
+# Config schema version. Do not edit manually.
+config_version: 0
+model:
+  backbone:
+    type: HRNet
+    model_name: hrnet_w32
+    freeze_bn_stats: true
+    freeze_bn_weights: false
+    interpolate_branches: false
+    increased_channel_count: false
+  heads:
+    bodypart:
+      type: HeatmapHead
+      weight_init: normal
+      predictor:
+        type: HeatmapPredictor
+        apply_sigmoid: false
+        clip_scores: true
+        location_refinement: true
+        locref_std: 7.2801
+      target_generator:
+        type: HeatmapGaussianGenerator
+        num_heatmaps: 5
+        pos_dist_thresh: 17
+        heatmap_mode: KEYPOINT
+        gradient_masking: false
+        generate_locref: true
+        locref_std: 7.2801
+      criterion:
+        heatmap:
+          type: WeightedMSECriterion
+          weight: 1.0
+        locref:
+          type: WeightedHuberCriterion
+          weight: 0.05
+      heatmap_config:
+        channels:
+        - 32
+        - 5
+        kernel_size:
+        - 3
+        strides:
+        - 2
+      locref_config:
+        channels:
+        - 32
+        - 10
+        kernel_size:
+        - 3
+        strides:
+        - 2
+  backbone_output_channels: 32
+  neck:
+  pose_model:
+net_type: hrnet_w32
+method: bu
+device: auto
+metadata:
+  project_path: E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27
+  pose_config_path: E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\dlc-models-pytorch\iteration-0\TreeShrewHeadAug27-trainset90shuffle1\train\pytorch_config.yaml
+  bodyparts:
+  - snout
+  - eye
+  - ear
+  - head_top
+  - nape
+  unique_bodyparts: []
+  individuals:
+  - individual_1
+  with_identity:
+data:
+  bbox_margin: 20
+  colormode: RGB
+  gen_sampling:
+  inference:
+    resize:
+    longest_max_size:
+    hflip:
+    affine:
+    random_bbox_transform:
+    crop_sampling:
+    hist_eq: false
+    motion_blur: false
+    covering:
+    elastic_transform:
+    grayscale:
+    gaussian_noise:
+    auto_padding:
+      pad_width_divisor: 32
+      pad_height_divisor: 32
+    normalize_images: true
+    scale_to_unit_range: false
+    top_down_crop:
+    collate:
+  train:
+    resize:
+    longest_max_size:
+    hflip:
+    affine:
+      p: 0.5
+      rotation: 30
+      scaling:
+      - 0.5
+      - 1.25
+      translation: 0
+    random_bbox_transform:
+    crop_sampling:
+      width: 448
+      height: 448
+      max_shift: 0.1
+      method: hybrid
+    hist_eq: false
+    motion_blur: true
+    covering:
+    elastic_transform:
+    grayscale:
+    gaussian_noise: 12.75
+    auto_padding:
+      pad_width_divisor: 32
+      pad_height_divisor: 32
+    normalize_images: true
+    scale_to_unit_range: false
+    top_down_crop:
+    collate:
+  loader:
+runner:
+  type: PoseTrainingRunner
+  gpus:
+  device: auto
+  key_metric: test.mAP
+  key_metric_asc: true
+  eval_interval: 10
+  optimizer:
+    type: AdamW
+    params:
+      lr: 0.0001
+  scheduler:
+    type: LRListScheduler
+    params:
+      lr_list:
+      - - 1e-05
+      - - 1e-06
+      milestones:
+      - 160
+      - 190
+  snapshots:
+    max_snapshots: 5
+    save_epochs: 50
+    save_optimizer_state: false
+  snapshot_prefix:
+  load_weights_only:
+train_settings:
+  batch_size: 6
+  dataloader_workers: 0
+  dataloader_pin_memory: false
+  display_iters: 500
+  epochs: 150
+  seed: 42
+  weight_init:
+    snapshot_path: E:\TreeShrew_Jumping\analysis\dlc\py310\lib\site-packages\deeplabcut\modelzoo\checkpoints\superanimal_quadruped_hrnet_w32.pt
+    detector_snapshot_path:
+    dataset: superanimal_quadruped
+    with_decoder: false
+    memory_replay: false
+    conversion_array:
+    bodyparts:
+inference:
+  multithreading:
+    enabled: true
+    queue_length: 4
+    timeout: 30.0
+  compile:
+    enabled: false
+    backend: inductor
+  autocast:
+    enabled: false
+  conditions:
+  snapshot:
+  eval:
+    mode: all
+    pcutoff: 0.6
+    comparison_bodyparts: all
+    per_keypoint_evaluation: false
+    force_multi_animal: false
+  output_dir:
+logger:
+with_center_keypoints: false
+detector:
+resume_training_from:

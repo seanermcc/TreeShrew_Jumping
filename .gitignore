@@ -1,0 +1,25 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+analysis/dlc/py310/
+
+# Downloaded model and package caches
+analysis/dlc/cache/
+
+# Raw and generated video (kept locally)
+*.mkv
+*.mp4
+
+# Large generated proxy arrays
+analysis/proxy/*.npy
+
+# Trained model snapshots exceed GitHub's per-file limit
+*.pt
+
+# Runtime logs and local scratch files
+*.log
+.DS_Store
+Thumbs.db
+

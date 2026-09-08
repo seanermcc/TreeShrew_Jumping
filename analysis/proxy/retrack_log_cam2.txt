@@ -1,0 +1,2 @@
+[Cam2] 104219 frames; building background
+[Cam2] threshold 6.00; animal found in 100.0% of frames; median area 1171 px

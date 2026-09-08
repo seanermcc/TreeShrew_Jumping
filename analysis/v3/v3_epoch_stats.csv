@@ -1,0 +1,61 @@
+group,metric,epoch,n,mean,sd,sem
+ALL,head_speed,pre,17,245.06,158.16,38.36
+ALL,head_speed,jump,17,700.8,402.67,97.66
+ALL,head_speed,post,17,171.6,62.55,15.17
+ALL,body_speed,pre,17,149.08,118.94,28.85
+ALL,body_speed,jump,17,726.16,627.1,152.09
+ALL,body_speed,post,17,185.95,141.6,34.34
+ALL,rel_speed,pre,17,77.18,131.71,31.95
+ALL,rel_speed,jump,17,-45.18,522.22,126.66
+ALL,rel_speed,post,17,-25.84,187.56,45.49
+ALL,"ang_nape_snout (mirrored, circular)",pre,17,-52.45,26.71,6.48
+ALL,"ang_nape_snout (mirrored, circular)",jump,14,-44.77,12.32,3.29
+ALL,"ang_nape_snout (mirrored, circular)",post,17,-74.8,33.05,8.02
+ALL,"ang_eye_snout (mirrored, circular)",pre,17,-58.83,25.2,6.11
+ALL,"ang_eye_snout (mirrored, circular)",jump,14,-51.74,17.15,4.58
+ALL,"ang_eye_snout (mirrored, circular)",post,17,-77.09,30.95,7.51
+up->up,head_speed,pre,12,201.31,114.95,33.18
+up->up,head_speed,jump,12,693.38,466.12,134.56
+up->up,head_speed,post,12,180.8,68.92,19.89
+up->up,body_speed,pre,12,100.93,84.94,24.52
+up->up,body_speed,jump,12,461.29,386.0,111.43
+up->up,body_speed,post,12,135.17,44.89,12.96
+up->up,rel_speed,pre,12,73.76,144.99,41.85
+up->up,rel_speed,jump,12,204.02,182.77,52.76
+up->up,rel_speed,post,12,44.43,52.65,15.2
+up->up,"ang_nape_snout (mirrored, circular)",pre,12,-51.04,28.38,8.19
+up->up,"ang_nape_snout (mirrored, circular)",jump,10,-47.41,13.57,4.29
+up->up,"ang_nape_snout (mirrored, circular)",post,12,-82.78,33.21,9.59
+up->up,"ang_eye_snout (mirrored, circular)",pre,12,-52.81,19.93,5.75
+up->up,"ang_eye_snout (mirrored, circular)",jump,10,-55.87,18.74,5.93
+up->up,"ang_eye_snout (mirrored, circular)",post,12,-86.99,31.67,9.14
+up->down,head_speed,pre,4,405.43,196.19,98.09
+up->down,head_speed,jump,4,715.49,259.44,129.72
+up->down,head_speed,post,4,148.66,47.9,23.95
+up->down,body_speed,pre,4,301.56,91.5,45.75
+up->down,body_speed,jump,4,1313.17,762.3,381.15
+up->down,body_speed,post,4,310.03,253.85,126.93
+up->down,rel_speed,pre,4,103.88,114.08,57.04
+up->down,rel_speed,jump,4,-597.68,688.22,344.11
+up->down,rel_speed,post,4,-206.57,330.64,165.32
+up->down,"ang_nape_snout (mirrored, circular)",pre,4,-63.42,21.37,10.69
+up->down,"ang_nape_snout (mirrored, circular)",jump,3,-39.12,5.6,3.23
+up->down,"ang_nape_snout (mirrored, circular)",post,4,-45.95,8.72,4.36
+up->down,"ang_eye_snout (mirrored, circular)",pre,4,-85.44,24.72,12.36
+up->down,"ang_eye_snout (mirrored, circular)",jump,3,-41.55,5.66,3.27
+up->down,"ang_eye_snout (mirrored, circular)",post,4,-50.33,7.31,3.65
+down->up,head_speed,pre,1,128.57,,
+down->up,head_speed,jump,1,731.11,,
+down->up,head_speed,post,1,152.88,,
+down->up,body_speed,pre,1,117.01,,
+down->up,body_speed,jump,1,1556.56,,
+down->up,body_speed,post,1,299.04,,
+down->up,rel_speed,pre,1,11.57,,
+down->up,rel_speed,jump,1,-825.45,,
+down->up,rel_speed,post,1,-146.16,,
+down->up,"ang_nape_snout (mirrored, circular)",pre,1,-25.34,,
+down->up,"ang_nape_snout (mirrored, circular)",jump,1,-35.87,,
+down->up,"ang_nape_snout (mirrored, circular)",post,1,-104.32,,
+down->up,"ang_eye_snout (mirrored, circular)",pre,1,-30.14,,
+down->up,"ang_eye_snout (mirrored, circular)",jump,1,-42.59,,
+down->up,"ang_eye_snout (mirrored, circular)",post,1,-77.37,,

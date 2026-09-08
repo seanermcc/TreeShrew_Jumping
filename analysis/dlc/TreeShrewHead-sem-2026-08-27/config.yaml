@@ -1,0 +1,197 @@
+# Config schema version. Do not edit manually.
+config_version: 0
+# Project definitions (do not edit)
+Task: TreeShrewHead
+scorer: sem
+date: Aug27
+multianimalproject: false
+identity:
+
+# Project path (change when moving around)
+project_path: E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27
+pose_config_path:
+
+# Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
+engine: pytorch
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_01.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_02.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_03.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_04.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_05.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_06.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_07.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_08.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_09.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_10.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_11.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_12.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_13.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_14.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_15.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_16.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_17.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_18.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_19.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_20.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_21.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_22.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_23.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_24.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_25.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_26.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam2_jump_27.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_01.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_02.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_03.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_04.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_05.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_06.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_07.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_08.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_09.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_10.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_11.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_12.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_13.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_14.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_15.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_16.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_17.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_18.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_19.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_20.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_21.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_22.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_23.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_24.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_25.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_26.mp4:
+    crop: 0, 1024, 0, 1024
+  E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27\videos\cam3_jump_27.mp4:
+    crop: 0, 1024, 0, 1024
+bodyparts:
+- snout
+- eye
+- ear
+- head_top
+- nape
+individuals:
+- individual_1
+uniquebodyparts: []
+multianimalbodyparts: []
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0.0
+stop: 1.0
+numframes2pick: 6
+
+# Plotting configuration
+skeleton:
+- - snout
+  - eye
+- - eye
+  - ear
+- - ear
+  - head_top
+- - head_top
+  - nape
+- - eye
+  - head_top
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 4
+alphavalue: 0.7
+colormap: rainbow
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.9
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+default_track_method:
+snapshotindex: -1
+detector_snapshotindex: -1
+batch_size: 8
+detector_batch_size: 1
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+# if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+# Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+
+# Conversion tables to fine-tune SuperAnimal weights
+SuperAnimalConversionTables:
+  superanimal_quadruped:
+    snout: nose
+    eye: left_eye
+    ear: left_earbase
+    nape: neck_base
+
+# These are very old parameters that are no longer used They are simply ignored.
+resnet:
+croppedtraining:

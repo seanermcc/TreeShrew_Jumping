@@ -1,0 +1,18 @@
+dataset: E:\TreeShrew_Jumping\analysis\dlc\TreeShrewHead-sem-2026-08-27
+num_joints: 5
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+all_joints_names:
+- snout
+- eye
+- ear
+- head_top
+- nape
+net_type: hrnet_w32
+dataset_type: multi-animal-imgaug
+global_scale: 1.0
+scoremap_dir: test

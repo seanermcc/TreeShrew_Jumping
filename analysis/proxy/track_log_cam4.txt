@@ -1,0 +1,2 @@
+[Cam4] 104215 frames; building background
+[Cam4] threshold 6.00; animal found in 100.0% of frames; median area 1410 px
